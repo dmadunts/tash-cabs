@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="colorPrimary">@color/black</color>
+    <color name="colorPrimaryDark">@color/whitish</color>
+    <color name="colorAccent">#FFC42E</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="gradientEndColor">#DB5D35</color>
+    <color name="gradientCenterColor">#F9B857</color>
+    <color name="gradientStartColor">#FFD159</color>
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+
+    <color name="whitish">#FAFAFA</color>
+    <color name="grayish">#80DCDCDC</color>
+    <color name="gray">#BBB</color>
+    <color name="blue">#1DA6E0</color>
+
+</resources>
+

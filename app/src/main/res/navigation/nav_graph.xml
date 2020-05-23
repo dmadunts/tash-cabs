@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/rider_dest">
+
+    <fragment
+        android:id="@+id/rider_dest"
+        android:name="com.renai.android.tashcabs.screens.rider.RiderFragment"
+        android:label="Rider"
+        tools:layout="@layout/fragment_rider">
+        <action
+            android:id="@+id/action_rider_dest_to_login_dest"
+            app:destination="@id/login_dest"
+            app:popUpTo="@id/login_dest"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signup_dest"
+        android:name="com.renai.android.tashcabs.screens.signup.SignUpFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signup_dest_to_rider_dest"
+            app:destination="@id/rider_dest"
+            app:popUpTo="@id/signup_dest"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/login_dest"
+        android:name="com.renai.android.tashcabs.screens.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_dest_to_rider_dest"
+            app:destination="@id/rider_dest"
+            app:popUpTo="@id/login_dest"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_login_dest_to_signup_dest"
+            app:destination="@id/signup_dest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/account_dest"
+        android:name="com.renai.android.tashcabs.screens.account.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_account">
+        <action
+            android:id="@+id/action_account_dest_to_login_dest"
+            app:destination="@id/login_dest"
+            app:popUpTo="@id/account_dest"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/no_connection_dest"
+        android:name="com.renai.android.tashcabs.screens.noconnection.NoConnectionFragment"
+        android:label="No connection">
+        <action
+            android:id="@+id/action_no_connection_dest_pop"
+            app:popUpTo="@id/no_connection_dest"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeholder_dest"
+        android:name="com.renai.android.tashcabs.screens.placeholder.PlaceholderFragment"
+        android:label="Placeholder"
+        tools:layout="@layout/fragment_placeholder" />
+</navigation>

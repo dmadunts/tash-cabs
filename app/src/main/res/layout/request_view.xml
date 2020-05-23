@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/request_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/whitish"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/warning_header"
+            style="@style/WarningStyle"
+            android:text="@string/allow_access_to_location_services"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toTopOf="@+id/center_guide"
+            app:layout_constraintEnd_toEndOf="@id/vertical_guide"
+            app:layout_constraintStart_toStartOf="@id/vertical_guide" />
+
+        <TextView
+            android:id="@+id/warning_subheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/failed_to_determine_your_location"
+
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/vertical_guide"
+            app:layout_constraintStart_toStartOf="@+id/vertical_guide"
+            app:layout_constraintTop_toBottomOf="@id/center_guide" />
+
+        <ImageView
+            android:id="@+id/arrow_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/arrow_button"
+            android:paddingEnd="8dp"
+            android:src="@drawable/ic_arrow_right_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/center_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>
