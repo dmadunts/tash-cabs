@@ -1,5 +1,5 @@
 # tash-cabs
-Simple taxi ordering client
+Simple taxi ordering client<br>
 ![screen_2020-05-24_00-50-51](https://user-images.githubusercontent.com/26573832/82828659-05bc5600-9ecb-11ea-8286-a7a38c019ded.jpg)
 ![screen_2020-05-24_00-50-55](https://user-images.githubusercontent.com/26573832/82828661-06ed8300-9ecb-11ea-99f3-4d491d810415.jpg)
 ![screen_2020-05-24_00-50-56](https://user-images.githubusercontent.com/26573832/82828662-07861980-9ecb-11ea-8610-8ce3d50af991.jpg)
